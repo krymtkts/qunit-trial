@@ -1,0 +1,20 @@
+{
+  "name": "qunit",
+  "version": "1.0.0",
+  "description": "qunit trial",
+  "main": "sample.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/run.js",
+    "lint": "eslint --fix ./"
+  },
+  "author": "krymtkts",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-google": "^0.12.0",
+    "node-qunit-puppeteer": "^1.0.11"
+  }
+}
