@@ -20,8 +20,10 @@ Usage
 -----
 
 ```sh
-# lint code
+# lint code & fix all auto-fixable problems
 npm run lint
 # run test
 npm run test
+# run recoding code coverage
+npm run coverage
 ```

@@ -10,6 +10,14 @@ class Sample {
   get1() {
     return 1;
   }
+
+  /**
+   * this method never called.
+   * @return {boolean} true
+   */
+  neverCalled() {
+    return true;
+  }
 }
 
 // windowsオブジェクトへオブジェクトが設定されているのを再現。

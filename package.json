@@ -8,13 +8,16 @@
   },
   "scripts": {
     "test": "node test/run.js",
-    "lint": "eslint --fix ./"
+    "lint": "eslint --fix ./",
+    "coverage": "node test/coverage.js && nyc report --reporter=html"
   },
   "author": "krymtkts",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^5.15.3",
     "eslint-config-google": "^0.12.0",
-    "node-qunit-puppeteer": "^1.0.11"
+    "node-qunit-puppeteer": "^1.0.11",
+    "nyc": "^13.3.0",
+    "puppeteer-to-istanbul": "^1.2.2"
   }
 }
