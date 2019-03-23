@@ -10,15 +10,16 @@ const qunitArgs = {
   redirectConsole: true,
 };
 
-runQunitPuppeteer(qunitArgs)
-    .then((result) => {
+(async () => {
+  try {
+    const result = await runQunitPuppeteer(qunitArgs);
     // Print the test result to the output
-      printOutput(result, console);
-      if (result.stats.failed > 0) {
-      // Handle the failed test run
-      // currently notghing to do.
-      }
-    })
-    .catch((ex) => {
-      console.error(ex);
-    });
+    printOutput(result, console);
+    if (result.stats.failed > 0) {
+    // Handle the failed test run
+    // currently notghing to do.
+    }
+  } catch (ex) {
+    console.error(ex);
+  }
+})();
