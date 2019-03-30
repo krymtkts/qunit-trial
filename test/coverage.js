@@ -13,7 +13,8 @@ const path = require('path');
     await page.waitFor('#qunit-header');
     const jsCoverage = await page.coverage.stopJSCoverage();
 
-    pti.write(jsCoverage);
+    // excludes test tools.
+    pti.write(jsCoverage.filter((entry) => entry.url.includes('sample.js')));
     await browser.close();
   } catch (error) {
     console.error(error);
