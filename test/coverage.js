@@ -9,6 +9,8 @@ const path = require('path');
 
     await page.coverage.startJSCoverage();
     await page.goto(`file://${path.join(__dirname, '/index.html')}`);
+    // wait for First Meaningfull Paint.
+    await page.waitFor('#qunit-header');
     const jsCoverage = await page.coverage.stopJSCoverage();
 
     pti.write(jsCoverage);
