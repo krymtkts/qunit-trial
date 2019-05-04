@@ -27,3 +27,11 @@ npm run test
 # run recoding code coverage
 npm run coverage
 ```
+
+when using doker.
+
+```sh
+docker build -t qunit-trial .
+
+docker run -i --init --rm --cap-add=SYS_ADMIN --name qunit-trial qunit-trial npm run test
+```
