@@ -28,7 +28,7 @@ npm run test
 npm run coverage
 ```
 
-when using doker.
+when using docker.
 
 ```sh
 docker build -t qunit-trial .
