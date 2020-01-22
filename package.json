@@ -1,7 +1,7 @@
 {
-  "name": "qunit",
+  "name": "qunit-puppeteer",
   "version": "1.0.0",
-  "description": "qunit trial",
+  "description": "qunit runs on puppeteer on docker",
   "main": "sample.js",
   "directories": {
     "test": "test"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node test/run.js",
     "lint": "eslint --fix ./",
-    "coverage": "node test/coverage.js && nyc report --reporter=html"
+    "coverage": "node test/coverage.js && nyc report --reporter=html --reporter=clover"
   },
   "author": "krymtkts",
   "license": "MIT",

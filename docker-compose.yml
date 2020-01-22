@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  qunit-puppeteer:
+    build: .
+    init: true
+    cap_add:
+      - SYS_ADMIN
+    container_name: qunit-puppeteer-chrome
+    tty: true
+    stdin_open: true
+    volumes:
+      - ./junit:/junit
+      - ./coverage:/coverage
+    working_dir: /usr/src
+    command: bash ./entrypoint.sh
