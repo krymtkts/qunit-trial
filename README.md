@@ -1,3 +1,5 @@
+# **DEPRECATED: currently this repository is not maintained.**
+
 # QUnit trial
 
 このプロジェクトは、お仕事で手直しすることになった QUnit のユニットテストを模倣したゴミプロジェクトです。
